@@ -141,11 +141,21 @@ module.exports = function (grunt) {
 
     // Automatically inject Bower components into the app
     'bower-install': {
-      app: {
-        html: '<%= yeoman.app %>/index.html',
-        ignorePath: '<%= yeoman.app %>/'
-      }
-    },
+
+    target: {
+
+    // Point to the files that should be updated when
+    // you run `grunt bower-install`
+    src: ['app/index.html'],
+
+    // Optional:
+    // ---------
+    cwd: '',
+    ignorePath: '',
+    exclude: [],
+    fileTypes: {}
+  }
+},
 
 
 
