@@ -15,9 +15,9 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css">
     <!-- endbuild -->
   </head>
   <body ng-app="stockWatcherAngularApp">
@@ -61,9 +61,13 @@
       </div>
     </div>
 
+    <div class="ui vertically divided grid">
+      <!-- Add your site or application content here -->
+        <div class="container" ng-view=""></div>
+    </div>
 
-    <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+
+    
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
