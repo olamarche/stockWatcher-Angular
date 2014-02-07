@@ -15,6 +15,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -22,6 +24,43 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <div class="ui vertical inverted sidebar menu">
+      <div class="item">
+          <h1>Stock Watcher</h1>
+      </div>
+      <div class="item">
+        <i class="star icon"></i> Portfolio
+        <div class="menu">
+          <a class="active item">AAPL</a>
+          <a class="item">GOOG</a>
+          <a class="item">TSLA</a>
+        </div>
+      </div>
+      <a class="item">
+        <i class="github icon"></i> Code on Github
+      </a>
+    </div>
+
+    <div class="ui fixed transparent inverted main menu">
+        <div class="container">
+            <div class="ui icon toggle item">
+                <i class="reorder icon"></i>
+            </div>
+        <a class="active item">
+          <i class="home icon"></i> Home
+        </a>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui icon input">
+                <input type="text" placeholder="Search..." />
+              <i class="search link icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
