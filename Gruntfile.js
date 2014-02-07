@@ -142,20 +142,20 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     'bower-install': {
 
-    target: {
+      target: {
 
     // Point to the files that should be updated when
     // you run `grunt bower-install`
-    src: ['app/index.html'],
+        src: ['app/index.html'],
 
-    // Optional:
-    // ---------
-    cwd: '',
-    ignorePath: '',
-    exclude: [],
-    fileTypes: {}
-  }
-},
+        // Optional:
+        // ---------
+        cwd: '',
+        ignorePath: '',
+        exclude: [],
+        fileTypes: {}
+      }
+    },
 
 
 
